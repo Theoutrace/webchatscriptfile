@@ -10,10 +10,13 @@ function prepareFrame() {
   );
   iframe.setAttribute("style", "position: fixed;bottom: 0;right: 0;");
   iframe.setAttribute("type", "text/js");
+  iframe.setAttribute("id", "iframe_web_chat_id");
   document.body.appendChild(iframe);
-  iframe.contentWindow.postMessage(
-    window.location.href,
-    `https://main--sitewebchat.netlify.app`
-  );
+  document
+    .getElementById("iframe_web_chat_id")
+    .contentWindow.postMessage(
+      window.location.href,
+      `https://main--sitewebchat.netlify.app`
+    );
 }
 prepareFrame();
