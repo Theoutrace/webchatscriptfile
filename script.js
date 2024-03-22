@@ -1,4 +1,7 @@
 function prepareFrame() {
+  var customValue = document.currentScript.getAttribute(
+    "data-custom-value-web-chat-app"
+  );
   // Retrieve parent site URL
   var parentSiteURL = window.location.href;
 
@@ -9,7 +12,7 @@ function prepareFrame() {
     // Set iframe attributes
     iframe.setAttribute(
       "src",
-      `https://main--sitewebchat.netlify.app/?parentURL=${encodeURIComponent(
+      `https://main--sitewebchat.netlify.app/?client=${customValue}&parentURL=${encodeURIComponent(
         parentSiteURL
       )}`
     );
