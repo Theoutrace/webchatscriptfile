@@ -9,11 +9,11 @@ function prepareFrame() {
     `https://main--sitewebchat.netlify.app/?client=${customValue}`
   );
   iframe.setAttribute("style", "position: fixed;bottom: 0;right: 0;");
+  iframe.setAttribute("type", "text/js");
+  document.body.appendChild(iframe);
   iframe.contentWindow.postMessage(
     window.location.href,
     `https://main--sitewebchat.netlify.app`
   );
-  iframe.setAttribute("type", "text/js");
-  document.body.appendChild(iframe);
 }
 prepareFrame();
