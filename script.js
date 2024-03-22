@@ -14,7 +14,7 @@ function prepareFrame() {
   document.body.appendChild(iframe);
   document
     .getElementById("iframe_web_chat_id")
-    .contentWindow.postMessage(
+    .children.contentWindow.postMessage(
       window.location.href,
       `https://main--sitewebchat.netlify.app`
     );
