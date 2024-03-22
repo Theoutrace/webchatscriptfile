@@ -16,7 +16,7 @@ function prepareFrame() {
     .getElementById("iframe_web_chat_id")
     .contentWindow.postMessage(
       window.location.href,
-      `https://main--sitewebchat.netlify.app`
+      `https://main--sitewebchat.netlify.app/?client=${customValue}`
     );
 }
 prepareFrame();
