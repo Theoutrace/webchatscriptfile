@@ -18,7 +18,7 @@ function prepareFrame() {
     // );
     iframe.setAttribute(
       "src",
-      `https://hiredoer.com/?client=${customValue}&parentURL=${encodeURIComponent(
+      `https://main--nextwebchat.netlify.app/?client=${customValue}&parentURL=${encodeURIComponent(
         parentSiteURL
       )}`
     );
