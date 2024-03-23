@@ -16,12 +16,7 @@ function prepareFrame() {
     //     parentSiteURL
     //   )}`
     // );
-    iframe.setAttribute(
-      "src",
-      `https://main--nextwebchat.netlify.app/?client=${customValue}&parentURL=${encodeURIComponent(
-        parentSiteURL
-      )}`
-    );
+    iframe.setAttribute("src", `https://main--nextwebchat.netlify.app`);
     iframe.setAttribute("style", "position: fixed; bottom: 0; right: 0;");
     iframe.setAttribute("id", "iframe_web_chat_id");
 
