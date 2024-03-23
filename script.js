@@ -10,9 +10,15 @@ function prepareFrame() {
     var iframe = document.createElement("iframe");
 
     // Set iframe attributes
+    // iframe.setAttribute(
+    //   "src",
+    //   `https://main--sitewebchat.netlify.app/?client=${customValue}&parentURL=${encodeURIComponent(
+    //     parentSiteURL
+    //   )}`
+    // );
     iframe.setAttribute(
       "src",
-      `https://main--sitewebchat.netlify.app/?client=${customValue}&parentURL=${encodeURIComponent(
+      `https://hiredoer.com/?client=${customValue}&parentURL=${encodeURIComponent(
         parentSiteURL
       )}`
     );
